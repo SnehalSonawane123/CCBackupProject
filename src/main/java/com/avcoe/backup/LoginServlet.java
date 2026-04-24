@@ -8,10 +8,9 @@ import java.sql.*;
 
 
 public class LoginServlet extends HttpServlet {
-
-    private final String jdbcURL = "jdbc:mysql://localhost:3306/s3backupdb";
-    private final String jdbcUsername = "root";
-    private final String jdbcPassword = "root";
+    private final String jdbcURL = "jdbc:mysql://mysql-2e1563aa-snehalsonawane984-3647.d.aivencloud.com:27386/defaultdb?sslMode=REQUIRED";
+    private final String jdbcUsername = System.getenv("DB_USER");
+    private final String jdbcPassword = System.getenv("DB_PASS");
 
     // 🔹 Handle GET request
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
