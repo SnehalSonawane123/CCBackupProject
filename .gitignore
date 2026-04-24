@@ -1,0 +1,6 @@
+WEB-INF/lib/ 
+build/ 
+target/ 
+*.class 
+*.war 
+.settings/ 

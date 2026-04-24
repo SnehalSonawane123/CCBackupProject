@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>BackupSystem2026</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.UploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ListFilesServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.ListFilesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListFilesServlet</servlet-name>
+    <url-pattern>/listFiles</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ListBackupServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.ListBackupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListBackupServlet</servlet-name>
+    <url-pattern>/listBackup</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeletePageServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.DeletePageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeletePageServlet</servlet-name>
+    <url-pattern>/deletePage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RestoreServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.RestoreServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RestoreServlet</servlet-name>
+    <url-pattern>/restore</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.avcoe.backup.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+</web-app>
