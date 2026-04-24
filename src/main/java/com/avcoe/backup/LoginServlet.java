@@ -1,7 +1,4 @@
-BasicAWSCredentials creds = new BasicAWSCredentials(
-    System.getenv("AWS_ACCESS_KEY_ID"),
-    System.getenv("AWS_SECRET_ACCESS_KEY")
-);package com.avcoe.backup;
+package com.avcoe.backup;
 
 import java.io.IOException;
 import java.sql.Connection;
