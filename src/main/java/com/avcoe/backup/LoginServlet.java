@@ -37,9 +37,10 @@ public class LoginServlet extends HttpServlet {
             }
 
             conn.close();
-        } catch (Exception e) {
-            throw new ServletException(e);
-        }
+       	    } catch (Exception e) {
+    		e.printStackTrace();
+    		throw new ServletException("DB ERROR: " + e.getMessage(), e);
+	}
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
