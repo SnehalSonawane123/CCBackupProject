@@ -44,11 +44,8 @@ public class HomeServlet extends HttpServlet {
                 request.getRequestDispatcher("home.jsp").forward(request, response);
             }
        	    } catch (Exception e) {
-    		e.printStackTrace();
     		response.setContentType("text/plain");
-    		response.getWriter().println("ERROR: " + e.getClass().getName() + ": " + e.getMessage());
-    		// temporarily comment out the error.jsp redirect
-    		// response.sendRedirect("error.jsp");
+    		response.getWriter().println(e.getClass().getName() + ": " + e.getMessage());
 	}
     }
 }
