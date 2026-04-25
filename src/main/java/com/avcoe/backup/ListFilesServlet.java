@@ -39,8 +39,8 @@ public class ListFilesServlet extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("list.jsp");
             rd.forward(request, response);
         } catch (Exception e) {
-            e.printStackTrace();
-            response.sendRedirect("error.jsp");
-        }
+    	   response.setContentType("text/plain");
+    	   response.getWriter().println(e.getClass().getName() + ": " + e.getMessage());
+       }
     }
 }
